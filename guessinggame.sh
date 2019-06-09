@@ -6,7 +6,7 @@ read number
 flag=0
 realnumber=$(ls -l | wc -l)
 
-while [[ flag -eq 0 ]]; do
+while [[ $flag -eq 0 ]]; do
     if [[ $number -lt $realnumber ]]; then
         echo "Too Low."
     else
